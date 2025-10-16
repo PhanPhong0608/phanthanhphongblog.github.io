@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dự án Tìm kiếm việc làm</title>
+    <meta name="description" content="Dự án tìm kiếm việc làm: công ty, ngành nghề, đơn ứng tuyển, CV với công nghệ ASP.NET Core, SQL Server, MVC, HTML, CSS." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Trang chủ">
+                <img class="logo" src="pics/hinhdaidien.jpg" onerror="this.style.display='none'">
+                <span class="brand-text">PhanThanhPhong-Blog</span>
+            </a>
+            <nav class="menu">
+                <a href="index.html#gioi-thieu">Giới thiệu</a>
+                <a href="index.html#du-an">Dự án</a>
+                <a href="index.html#blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="max-width:860px; padding:var(--g6) var(--g4)">
+        
+        <article class="card" style="padding:var(--g5)">
+            <header>
+                <p class="eyebrow">Dự án • Tìm kiếm việc làm</p>
+                <h1 class="display" style="font-size:clamp(28px,4vw,40px)">JobPortal</h1>
+                <p class="meta" style="margin-top:6px"><time datetime="2025-06-20">20/06/2025</time></p>
+            </header>
+            <hr style="border:0; border-top:1px solid var(--border); margin:16px 0" />
+            <!-- Carousel section -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="pics/da1.png" alt="Image 1" class="carousel-image">
+                    <img src="pics/da1.1.png" alt="Image 2" class="carousel-image">
+                    <img src="pics/da1.3.png" alt="Image 3" class="carousel-image">
+                    <img src="pics/da1.4.png" alt="Image 4" class="carousel-image">
+                    <img src="pics/da1.5.png" alt="Image 5" class="carousel-image">
+                    <img src="pics/da1.6.png" alt="Image 6" class="carousel-image">
+                </div>
+            </div>
+
+            <section style="max-width:75ch">
+                <h2>Mô tả dự án</h2>
+                <p>Đây là một dự án web tìm kiếm việc làm, cho phép người dùng tìm kiếm việc làm dựa trên các tiêu chí như công ty, ngành nghề, và đơn ứng tuyển. Dự án được phát triển với các công nghệ: <strong>ASP.NET Core</strong> cho backend, <strong>SQL Server</strong> cho cơ sở dữ liệu, <strong>MVC</strong> cho mô hình thiết kế, và <strong>HTML</strong>, <strong>CSS</strong> cho giao diện người dùng.</p>
+
+                <h2>Tính năng chính</h2>
+                <ul>
+                    <li>Tìm kiếm việc làm theo công ty, ngành nghề và địa điểm.</li>
+                    <li>Hiển thị thông tin chi tiết về các đơn ứng tuyển và CV của ứng viên.</li>
+                    <li>Cung cấp khả năng nộp đơn ứng tuyển qua hệ thống.</li>
+                    <li>Quản lý và lưu trữ thông tin các đơn ứng tuyển và hồ sơ của ứng viên trong cơ sở dữ liệu.</li>
+                </ul>
+
+                <h2>Công nghệ sử dụng</h2>
+                <ul>
+                    <li><strong>ASP.NET Core</strong>: Được sử dụng để xây dựng backend, xử lý các yêu cầu API và cung cấp các chức năng liên quan đến tìm kiếm việc làm và đơn ứng tuyển.</li>
+                    <li><strong>SQL Server</strong>: Cơ sở dữ liệu để lưu trữ các thông tin về công ty, ngành nghề, đơn ứng tuyển, và CV.</li>
+                    <li><strong>MVC</strong>: Mô hình MVC giúp phân chia rõ ràng giữa dữ liệu (Model), giao diện (View), và xử lý logic (Controller).</li>
+                    <li><strong>HTML & CSS</strong>: Dùng để xây dựng giao diện người dùng đơn giản, dễ sử dụng và thân thiện.</li>
+                </ul>
+
+                <h2>Quy trình phát triển</h2>
+                <p>Dự án được chia thành các bước phát triển chính như sau:</p>
+                <ul>
+                    <li>Phân tích yêu cầu và thiết kế cơ sở dữ liệu trong SQL Server.</li>
+                    <li>Xây dựng backend với ASP.NET Core để xử lý các yêu cầu tìm kiếm và nộp đơn ứng tuyển.</li>
+                    <li>Phát triển giao diện người dùng với HTML và CSS để hiển thị kết quả tìm kiếm và thông tin chi tiết.</li>
+                    <li>Thực hiện kiểm thử và tối ưu hệ thống trước khi triển khai.</li>
+                </ul>
+
+                <h2>Mục tiêu của dự án</h2>
+                <ul>
+                    <li>Cung cấp một công cụ tìm kiếm việc làm mạnh mẽ cho người dùng.</li>
+                    <li>Cải thiện khả năng tìm kiếm việc làm thông qua các bộ lọc chi tiết và hệ thống đề xuất.</li>
+                    <li>Xây dựng nền tảng cho các hệ thống tuyển dụng trực tuyến trong tương lai.</li>
+                </ul>
+            </section>
+
+            <nav style="margin-top:24px; display:flex; gap:12px">
+                <a class="btn ghost" href="index.html#du-an">← Về danh sách dự án</a>
+            </nav>
+        </article>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Thông tin</h2>
+                <ul class="foot-list">
+                    <li>📞 077 676 2368</li>
+                    <li>✉ phanphong0608@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <a class="brand" href="index.html" aria-label="Trang chủ"> </a>
+                <h2>Điều hướng</h2>
+                <ul class="foot-list">
+                    <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="index.html#du-an">Dự án</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Kết nối</h2>
+                <ul class="foot-list">
+                    <li><a href="https://github.com/PhanPhong0608" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/phan.phong.496372" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© <span id="year">2025</span> • PHAN THANH PHONG</div>
+    </footer>
+
+    <script>const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();</script>
+
+</body>
+
+</html>

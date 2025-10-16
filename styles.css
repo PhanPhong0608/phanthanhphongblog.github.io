@@ -46,6 +46,8 @@ body {
     padding: 0 var(--g4);
 }
 
+
+
 /* Đảm bảo các section không bị chồng hoặc quá rộng */
 section {
     padding: var(--g5) var(--g4); 
@@ -210,17 +212,54 @@ a:hover {
 }
 
 .hero-card {
-    padding: var(--g5);
+    width: 950px; /* Điều chỉnh chiều rộng theo ý muốn */
+    padding: 20px; /* Thêm padding để tạo khoảng cách bên trong */
+    border-radius: 10px; /* Làm tròn góc của card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+}
+
+/* Điều chỉnh các phần tử trong card */
+.hero-card h3 {
+    margin-bottom: 15px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.hero-card .list {
+    padding-left: 20px; /* Thêm khoảng cách cho danh sách */
+}
+
+.hero-card .list li {
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các mục trong danh sách */
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px; /* Điều chỉnh khoảng cách bên trái của nội dung */
+}
+
+.hero-left h2 {
+    margin-top: 0; /* Giảm khoảng cách trên cùng của tên */
+}
+
+.stats {
+    margin-top: 10px; /* Thêm khoảng cách giữa các stats và văn bản khác */
+}
+
+/* Điều chỉnh layout để thu hẹp khoảng trống bên trong container */
+.hero-grid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: var(--g3);
-    box-shadow: var(--shadow-md);
-    border: 4px solid color-mix(in srgb, #fff 8%, transparent);
+    width: 200px; /* Điều chỉnh kích thước hình ảnh theo ý muốn */
+    height: 300px;
+    border-radius: 5%; /* Làm tròn hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh vừa vặn trong hình tròn */
+    display: block;
+    margin-right: 20px; /* Thêm khoảng cách giữa avatar và văn bản */
 }
 
 .list {
@@ -293,6 +332,33 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--g4);
+}
+
+.project.card {
+    flex: 1 1 300px; /* Mỗi phần tử chiếm ít nhất 300px và có thể mở rộng */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Căn chỉnh nội dung bên trong mỗi card */
+.project.card .post-body {
+    flex-grow: 1; /* Cho phép phần nội dung chiếm không gian còn lại */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa tiêu đề và ngày tháng */
+}
+
+/* Điều chỉnh các tiêu đề và nội dung để không bị kéo dài */
+.project.card .post-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project.card .muted {
+    color: var(--muted);
+    font-size: 18px;
+    margin-top: 10px; /* Thêm khoảng cách cho nội dung bên dưới */
 }
 
 .project {
@@ -470,6 +536,63 @@ textarea {
     outline: 3px solid var(--ring);
     outline-offset: 2px;
 }
+
+/* CSS cho Carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    width: 600%; /* 6 hình ảnh */
+    animation: slide 21s infinite ease-in-out; /* 21s = (6 hình x 3s) + (5 lần chuyển x 0.6s) */
+}
+
+.carousel-image {
+    width: 16.6667%; /* 1/6 chiều rộng */
+    object-fit: cover;
+}
+
+/* Định nghĩa hiệu ứng di chuyển */
+@keyframes slide {
+    0%, 14.28% {
+        transform: translateX(0); /* Dừng ở hình 1 */
+    }
+    19.05% {
+        transform: translateX(-16.6667%); /* Chuyển sang hình 2 */
+    }
+    33.33% {
+        transform: translateX(-16.6667%); /* Dừng ở hình 2 */
+    }
+    38.10% {
+        transform: translateX(-33.3334%); /* Chuyển sang hình 3 */
+    }
+    52.38% {
+        transform: translateX(-33.3334%); /* Dừng ở hình 3 */
+    }
+    57.14% {
+        transform: translateX(-50%); /* Chuyển sang hình 4 */
+    }
+    71.43% {
+        transform: translateX(-50%); /* Dừng ở hình 4 */
+    }
+    76.19% {
+        transform: translateX(-66.6667%); /* Chuyển sang hình 5 */
+    }
+    90.48% {
+        transform: translateX(-66.6667%); /* Dừng ở hình 5 */
+    }
+    95.24% {
+        transform: translateX(-83.3334%); /* Chuyển sang hình 6 */
+    }
+    100% {
+        transform: translateX(-83.3334%); /* Dừng ở hình 6 */
+    }
+}
+
 
 /* Responsive */
 @media (max-width: 1024px) {

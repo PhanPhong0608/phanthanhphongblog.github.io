@@ -20,7 +20,7 @@
     <header class="site-header">
         <div class="container nav">
             <a class="brand" href="index.html" aria-label="Trang chủ">
-                <img class="logo" src="pics/images (1).jpg"
+                <img class="logo" src="pics/hinhdaidien.jpg"
                     onerror="this.style.display='none'">
                 <span class="brand-text">PhanThanhPhong-Blog</span>
             </a>
@@ -36,11 +36,19 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-grid">
+                <!-- Avatar Container -->
+                <div class="avatar-container">
+                    <img class="avatar" src="pics/hinhdaidien.jpg" onerror="this.style.display='none'">
+                </div>
+                
+                <!-- Hero Left Content -->
                 <div class="hero-left">
                     <p class="eyebrow">Chào mừng các bạn đến với Blog cá nhân của mình.</p>
                     <h2>PHAN THANH PHONG</h2>
-                    <p class="lead">Sinh viên HUTECH – yêu thích thiết kế Web, viết blog chia sẻ kinh nghiệm <strong>Lập trình Web</strong> và làm <strong>web/.NET</strong>. Đây là nơi mình lưu dự
-                        án, ghi chú và bài học.</p>
+                    <p class="lead">
+                        Sinh viên HUTECH – yêu thích thiết kế Web, viết blog chia sẻ kinh nghiệm <strong>Lập trình Web</strong> và làm <strong>web/.NET</strong>. 
+                        Đây là nơi mình lưu dự án, ghi chú và bài học.
+                    </p>
                     <div class="actions">
                         <a class="btn primary" href="#du-an">Xem dự án</a>
                         <a class="btn ghost" href="cv.pdf" download>Tải CV</a>
@@ -51,14 +59,13 @@
                         <li><span class="num">2+</span> bài viết</li>
                     </ul>
                 </div>
+
+                <!-- Quick Info Section -->
                 <aside class="hero-card card">
-                    <img class="avatar" src="pics/images (1).jpg"
-                        onerror="this.style.display='none'">
-                    <h4>Phan Thanh Phong</h4>
                     <h3>Thông tin nhanh</h3>
                     <ul class="list">
                         <li>📍 TP.HCM, Việt Nam</li>
-                        <li>🎓 Đại Học Công Nghệ Thành phố Hồ Chí Minh – Lập trình Web</li>
+                        <li>🎓 Đại Học Công Nghệ Thành phố Hồ Chí Minh – Công Nghệ Thông Tin</li>
                         <li><a href="https://github.com/PhanPhong0608" target="_blank">GitHub</a></li>
                         <li><a href="https://www.facebook.com/phan.phong.496372" target="_blank">Facebook</a></li>
                     </ul>
@@ -74,18 +81,18 @@
                     <p>Mình thích các bố cục rõ ràng, viết tài liệu gãy gọn, và biến quy trình hành chính thành
                         checklist dễ dùng. Ở mảng kỹ thuật, mình làm các web app nhỏ với <strong>ASP.NET Core
                             MVC</strong>, <strong>SQL Server</strong>, và <strong>Visual Studio Code</strong>.</p>
-                    <p>Blog này là nơi tổng hợp: kinh nghiệm học tập, các mẹo học, và cách mình triển khai từng dự án
-                        nhỏ.</p>
+                    <p>Blog này là nơi tổng hợp: kinh nghiệm học tập, các mẹo học và cách từng dự án
+                        nhỏ đã làm.</p>
                 </article>
                 <aside class="card">
                     <h2>Kỹ năng</h2>
                     <div class="chips">
-                        <span class="chip">HTML/CSS (Responsive)</span>
+                        <span class="chip">HTML/CSS</span>
                         <span class="chip">ASP.NET Core MVC</span>
-                        <span class="chip">EF Core • SQL Server</span>
+                        <span class="chip">SQL Server</span>
                         <span class="chip">REST API</span>
                         <span class="chip">Visual Studio Code</span>
-                        <span class="chip">Git/GitHub</span>
+                        <span class="chip">GitHub</span>
                         <span class="chip">Viết tài liệu</span>
                     </div>
                 </aside>
@@ -97,13 +104,12 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Dự án nổi bật</h2>
-                    <a class="link" href="#">Xem tất cả →</a>
                 </div>
                 <div class="grid-3">
                     <article class="project card">
-                        <img src="pics/images (1).jpg">
+                        <img src="pics/da1.png">
                         <div class="p-body">
-                            <h3>JobPortal</h3>
+                            <a class="post-title" href="duan1.html">JobPortal</a>
                             <p class="muted">Tìm kiếm việc làm: công ty, ngành nghề, đơn ứng tuyển, CV...</p>
                             <div class="tags">
                                 <span class="tag">ASP.NET Core</span>
@@ -115,9 +121,9 @@
                         </div>
                     </article>
                     <article class="project card">
-                        <div class="thumb"><span>16:9</span></div>
+                        <img src="pics/da2.png">
                         <div class="p-body">
-                            <h3>CineTicket</h3>
+                            <a class="post-title" href="duan2.html">CineTicket</a>
                             <p class="muted">Đặt vé phim: suất chiếu, chọn ghế, bắp nước, hóa đơn...</p>
                             <div class="tags">
                                 <span class="tag">ASP.NET Core</span>
@@ -129,15 +135,16 @@
                         </div>
                     </article>
                     <article class="project card">
-                        <div class="thumb"><span>16:9</span></div>
+                        <img src="pics/da3.jpg">
                         <div class="p-body">
-                            <h3>Quản lý quán coffee</h3>
+                            <a class="post-title" href="duan3.html">Quản lý quán coffee</a>
                             <p class="muted">Quản lý quán coffee: thanh toán, hóa đơn, đặt bàn, order...</p>
                             <div class="tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
                                 <span class="tag">ASP.NET Core</span>
                                 <span class="tag">SQL Server</span>
+                                <span class="tag">MVC</span>
                             </div>
                         </div>
                     </article>
@@ -155,7 +162,7 @@
                     <article class="project card">
                         <img src="pics/nbs.png">
                         <div class="post-body">
-                            <a class="post-title" href="post.html">NetWorking Basic</a>
+                            <a class="post-title" href="post1.html">NetWorking Basic</a>
                             <p class="muted">Khóa học giới thiệu về các khái niệm cơ bản của mạng máy tính. Khóa học này là phần nền tảng cho những ai mới bắt đầu tìm hiểu về mạng, từ việc hiểu các loại mạng cơ bản đến việc cài đặt và bảo mật các hệ thống mạng.</p>
                             <div class="meta">08/09/2025</div>
                         </div>
@@ -163,7 +170,7 @@
                     <article class="project card">
                         <img src="pics/jse1.png">
                         <div class="post-body">
-                            <a class="post-title" href="post.html">JavaScript Essentials 1</a>
+                            <a class="post-title" href="post2.html">JavaScript Essentials 1</a>
                             <p class="muted">Khóa học cơ bản trong Cisco Networking Academy, giúp học viên nắm vững các kiến thức nền tảng của JavaScript, ngôn ngữ lập trình phổ biến trong phát triển ứng dụng web.</p>
                             <div class="meta">22/09/2025</div>
                         </div>
@@ -171,7 +178,7 @@
                     <article class="project card">
                         <img src="pics/jse2.png">
                         <div class="post-body">
-                            <a class="post-title" href="post.html">JavaScript Essentials 2</a>
+                            <a class="post-title" href="post3.html">JavaScript Essentials 2</a>
                             <p class="muted">Khóa học trong Cisco Networking Academy tập trung vào việc nâng cao kỹ năng lập trình JavaScript cơ bản. Khóa học này xây dựng nền tảng vững chắc cho những ai muốn phát triển các ứng dụng web động bằng JavaScript.</p>
                             <div class="meta">08/10/2025</div>
                         </div>
