@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phan Thanh Phong • Blog & Portfolio</title>
+  <meta name="description" content="Blog cá nhân & portfolio: giới thiệu, kỹ năng, dự án, bài viết, liên hệ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* fallback nếu quên thêm CSS ở file riêng */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Skip link -->
+
+  <!-- Header (fixed để luôn thấy menu) -->
+  <header class="site-header header-fixed">
+    <div class="container nav">
+      <a class="brand" href="#hero" aria-label="Trang chủ">
+        <img class="logo" src="pics/hinhdaidien.jpg" onerror="this.style.display='none'">
+        <span class="brand-text">PhanThanhPhong-Blog</span>
+      </a>
+      <nav aria-label="Điều hướng chính" class="menu">
+        <a class="nav-link" href="#gioi-thieu" data-target="gioi-thieu">Giới thiệu</a>
+        <a class="nav-link" href="#du-an" data-target="du-an">Dự án</a>
+        <a class="nav-link" href="#blog" data-target="blog">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="snap-container">
+
+    <!-- Section: Hero -->
+    <section id="hero" class="section snap-start reveal">
+      <div class="container hero-grid">
+        <div class="avatar-container">
+          <img class="avatar" src="pics/hinhdaidien.jpg" alt="Ảnh đại diện" loading="eager" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-left">
+          <p class="eyebrow">Chào mừng các bạn đến với Blog cá nhân của mình.</p>
+          <h1 class="title-xl">PHAN THANH PHONG</h1>
+          <p class="lead">
+            Sinh viên trường Đại học Công Nghệ Thành phố Hồ Chí Minh – yêu thích thiết kế Web, 
+            viết blog chia sẻ kinh nghiệm <strong>Lập trình Web</strong> và làm <strong>web/.NET</strong>.
+            Đây là nơi mình lưu dự án và các bài học liên quan.
+          </p>
+          <ul class="stats">
+            <li><span class="num">2+</span> năm học dev</li>
+            <li><span class="num">3</span> dự án mini</li>
+            <li><span class="num">2+</span> bài viết</li>
+          </ul>
+        </div>
+        <aside class="hero-card card">
+          <h3>Thông tin nhanh</h3>
+          <ul class="list">
+            <li>📍 TP.HCM, Việt Nam</li>
+            <li>🎓 Đại học Công Nghệ Thành phố Hồ Chí Minh – Công Nghệ Thông Tin</li>
+            <li><a href="https://github.com/PhanPhong0608" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.facebook.com/phan.phong.496372" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section: Giới thiệu & Kỹ năng -->
+    <section id="gioi-thieu" class="section snap-start alt reveal">
+      <div class="container two-col">
+        <article class="card">
+          <h2>Về mình</h2>
+          <p>Mình thích các bố cục rõ ràng, viết tài liệu gãy gọn, và biến quy trình hành chính thành checklist dễ dùng.
+            Ở mảng kỹ thuật, mình làm các web app nhỏ với <strong>ASP.NET Core MVC</strong>, <strong>SQL Server</strong>, và <strong>Visual Studio Code</strong>.
+          </p>
+          <p>Blog này là nơi tổng hợp: kinh nghiệm học tập, các dự án nhỏ đã làm.</p>
+        </article>
+        <aside class="card">
+          <h2>Kỹ năng</h2>
+          <div class="chips">
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">ASP.NET Core MVC</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">REST API</span>
+            <span class="chip">Visual Studio Code</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Viết tài liệu</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Section: Dự án nổi bật -->
+    <section id="du-an" class="section snap-start reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Dự án nổi bật</h2>
+        </div>
+        <div class="grid-3">
+          <article class="project card">
+            <img src="pics/da1.png" loading="lazy" alt="">
+            <div class="p-body">
+              <a class="post-title" href="duan1.html">JobPortal</a>
+              <p class="muted">Tìm kiếm việc làm: công ty, ngành nghề, đơn ứng tuyển, CV...</p>
+              <div class="tags">
+                <span class="tag">ASP.NET Core</span><span class="tag">SQL Server</span>
+                <span class="tag">MVC</span><span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+          </article>
+          <article class="project card">
+            <img src="pics/da2.png" loading="lazy" alt="">
+            <div class="p-body">
+              <a class="post-title" href="duan2.html">CineTicket</a>
+              <p class="muted">Đặt vé phim: suất chiếu, chọn ghế, bắp nước, hóa đơn...</p>
+              <div class="tags">
+                <span class="tag">ASP.NET Core</span><span class="tag">REST API</span>
+                <span class="tag">SQL Server</span><span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+          </article>
+          <article class="project card">
+            <img src="pics/da3.jpg" loading="lazy" alt="">
+            <div class="p-body">
+              <a class="post-title" href="duan3.html">Quản lý quán coffee</a>
+              <p class="muted">Quản lý quán coffee: thanh toán, hóa đơn, đặt bàn, order...</p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+                <span class="tag">ASP.NET Core</span><span class="tag">SQL Server</span><span class="tag">MVC</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Blog -->
+    <section id="blog" class="section snap-start alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Bài viết mới</h2>
+        </div>
+        <div class="posts">
+          <article class="project card">
+            <img src="pics/nbs.png" loading="lazy" alt="">
+            <div class="post-body">
+              <a class="post-title" href="post1.html">NetWorking Basic</a>
+              <p class="muted">Khóa học giới thiệu về các khái niệm cơ bản của mạng máy tính. 
+                Khóa học này là phần nền tảng cho những ai mới bắt đầu tìm hiểu về mạng, 
+                từ việc hiểu các loại mạng cơ bản đến việc cài đặt và bảo mật các hệ thống mạng.</p>
+              <div class="meta">08/09/2025</div>
+            </div>
+          </article>
+          <article class="project card">
+            <img src="pics/jse1.png" loading="lazy" alt="">
+            <div class="post-body">
+              <a class="post-title" href="post2.html">JavaScript Essentials 1</a>
+              <p class="muted">Khóa học cơ bản trong Cisco Networking Academy, 
+                giúp học viên nắm vững các kiến thức nền tảng của JavaScript, 
+                ngôn ngữ lập trình phổ biến trong phát triển ứng dụng web.</p>
+              <div class="meta">22/09/2025</div>
+            </div>
+          </article>
+          <article class="project card">
+            <img src="pics/jse2.png" loading="lazy" alt="">
+            <div class="post-body">
+              <a class="post-title" href="post3.html">JavaScript Essentials 2</a>
+              <p class="muted">Khóa học trong Cisco Networking Academy tập trung vào việc nâng cao kỹ năng lập trình JavaScript cơ bản. 
+                Khóa học này xây dựng nền tảng vững chắc cho những ai muốn phát triển các ứng dụng web động bằng JavaScript.</p>
+              <div class="meta">08/10/2025</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer id="footer" class="section snap-start footer-section reveal">
+      <div class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <h2>Thông tin</h2>
+            <ul class="foot-list">
+              <li>📞 077 676 2368</li>
+              <li>✉ phanphong0608@gmail.com</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Điều hướng</h2>
+            <ul class="foot-list">
+              <li><a href="#gioi-thieu">Giới thiệu</a></li>
+              <li><a href="#du-an">Dự án</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Kết nối</h2>
+            <ul class="foot-list">
+              <li><a href="https://github.com/PhanPhong0608" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.facebook.com/phan.phong.496372" target="_blank" rel="noopener">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© <span id="year">2025</span> • PHAN THANH PHONG</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Cập nhật năm
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+
+    // Active link theo section
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = [...document.querySelectorAll('.section')];
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // reveal animation
+          entry.target.classList.add('revealed');
+
+          // set active nav
+          const id = entry.target.id;
+          navLinks.forEach(a => {
+            a.removeAttribute('aria-current');
+            if (a.getAttribute('data-target') === id) {
+              a.setAttribute('aria-current', 'page');
+            }
+          });
+        }
+      });
+    }, { root: null, threshold: 0.5 });
+
+    sections.forEach(sec => io.observe(sec));
+
+    // Smooth scroll offset (bù header fixed)
+    const header = document.querySelector('.header-fixed');
+    const headerH = () => header ? header.offsetHeight : 0;
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (!el) return;
+        e.preventDefault();
+        const top = el.getBoundingClientRect().top + window.scrollY - headerH();
+        window.scrollTo({ top, behavior: 'smooth' });
+        history.replaceState(null, '', `#${id}`);
+      });
+    });
+
+    // Tắt snap nếu người dùng giảm chuyển động
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) document.documentElement.classList.add('reduced-motion');
+  </script>
+</body>
+</html>

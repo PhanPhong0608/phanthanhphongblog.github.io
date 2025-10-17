@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dự án Quản lý Quán Cà Phê</title>
+    <meta name="description" content="Dự án quản lý quán cà phê: thanh toán, hóa đơn, đặt bàn, order với công nghệ ASP.NET Core, SQL Server, HTML và CSS." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html" aria-label="Trang chủ">
+                <img class="logo" src="pics/hinhdaidien.jpg" onerror="this.style.display='none'">
+                <span class="brand-text">PhanThanhPhong-Blog</span>
+            </a>
+            <nav class="menu">
+                <a href="index.html#gioi-thieu">Giới thiệu</a>
+                <a href="index.html#du-an">Dự án</a>
+                <a href="index.html#blog">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="max-width:860px; padding:var(--g6) var(--g4)">
+        
+        <article class="card" style="padding:var(--g5)">
+            <header>
+                <p class="eyebrow">Dự án • Quản Lý Quán Coffee</p>
+                <h1 class="display" style="font-size:clamp(28px,4vw,40px)">Quản Lý Quán Coffee</h1>
+                <p class="meta" style="margin-top:6px"><time datetime="2025-06-20">20/06/2025</time></p>
+            </header>
+            <hr style="border:0; border-top:1px solid var(--border); margin:16px 0" />
+            <!-- Carousel section -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="pics/da3.jpg" alt="Image 1" class="carousel-image">
+                    <img src="pics/da3.2.jpg" alt="Image 2" class="carousel-image">
+                    <img src="pics/da3.3.jpg" alt="Image 3" class="carousel-image">
+                    <img src="pics/da3.4.png" alt="Image 4" class="carousel-image">
+                    <img src="pics/da3.5.png" alt="Image 5" class="carousel-image">
+                    <img src="pics/da3.6.png" alt="Image 6" class="carousel-image">
+                </div>
+            </div>
+
+            <section style="max-width:75ch">
+                <h2>Mô tả dự án</h2>
+                <p>Đây là một dự án web quản lý quán cà phê, cho phép người dùng thực hiện các chức năng như đặt bàn, chọn món, thanh toán và tạo hóa đơn. Dự án được phát triển với các công nghệ: <strong>ASP.NET Core</strong> cho backend, <strong>SQL Server</strong> cho cơ sở dữ liệu, <strong>MVC</strong> cho mô hình thiết kế, và <strong>HTML</strong>, <strong>CSS</strong> cho giao diện người dùng.</p>
+
+                <h2>Tính năng chính</h2>
+                <ul>
+                    <li>Đặt bàn cho khách hàng theo ngày và giờ.</li>
+                    <li>Chọn món ăn và đồ uống từ menu.</li>
+                    <li>Thanh toán đơn hàng và tạo hóa đơn.</li>
+                    <li>Quản lý thông tin các đơn đặt bàn, order và hóa đơn trong cơ sở dữ liệu.</li>
+                    <li>Cập nhật trạng thái bàn (đặt trước, trống, đã phục vụ).</li>
+                </ul>
+
+                <h2>Công nghệ sử dụng</h2>
+                <ul>
+                    <li><strong>ASP.NET Core</strong>: Được sử dụng để xây dựng backend, xử lý các yêu cầu API và cung cấp các chức năng liên quan đến đặt bàn, order món và thanh toán.</li>
+                    <li><strong>SQL Server</strong>: Cơ sở dữ liệu để lưu trữ thông tin về món ăn, đồ uống, bàn, khách hàng và các hóa đơn.</li>
+                    <li><strong>MVC</strong>: Mô hình MVC giúp phân chia rõ ràng giữa dữ liệu (Model), giao diện (View), và xử lý logic (Controller).</li>
+                    <li><strong>HTML & CSS</strong>: Dùng để xây dựng giao diện người dùng đơn giản, dễ sử dụng và phù hợp với thiết bị di động.</li>
+                </ul>
+
+                <h2>Quy trình phát triển</h2>
+                <p>Dự án được chia thành các bước phát triển chính như sau:</p>
+                <ul>
+                    <li>Phân tích yêu cầu và thiết kế cơ sở dữ liệu trong SQL Server.</li>
+                    <li>Xây dựng backend với ASP.NET Core để xử lý các yêu cầu từ người dùng về đặt bàn, order món, thanh toán và tạo hóa đơn.</li>
+                    <li>Phát triển giao diện người dùng với HTML và CSS để hiển thị thông tin về món ăn, đồ uống, bàn, và hóa đơn.</li>
+                    <li>Thực hiện kiểm thử và tối ưu hệ thống trước khi triển khai cho người dùng.</li>
+                </ul>
+
+                <h2>Mục tiêu của dự án</h2>
+                <ul>
+                    <li>Cung cấp một hệ thống quản lý quán cà phê dễ sử dụng và tiện lợi cho người dùng.</li>
+                    <li>Giúp quản lý quán cà phê theo dõi và xử lý đơn đặt bàn, order món, và hóa đơn nhanh chóng và hiệu quả.</li>
+                    <li>Xây dựng nền tảng cho hệ thống quản lý quán cà phê có thể mở rộng và tích hợp các chức năng khác trong tương lai.</li>
+                </ul>
+            </section>
+
+            <nav style="margin-top:24px; display:flex; gap:12px">
+                <a class="btn ghost" href="index.html#du-an">← Về danh sách dự án</a>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h2>Thông tin</h2>
+                <ul class="foot-list">
+                    <li>📞 077 676 2368</li>
+                    <li>✉ phanphong0608@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <a class="brand" href="index.html" aria-label="Trang chủ"> </a>
+                <h2>Điều hướng</h2>
+                <ul class="foot-list">
+                    <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="index.html#du-an">Dự án</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Kết nối</h2>
+                <ul class="foot-list">
+                    <li><a href="https://github.com/PhanPhong0608" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/phan.phong.496372" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© <span id="year">2025</span> • PHAN THANH PHONG</div>
+    </footer>
+
+    <script>const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();</script>
+
+</body>
+
+</html>
